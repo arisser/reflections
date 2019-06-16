@@ -1,0 +1,6 @@
+What happens when you initialize a repository?  Why do you need to do it?
+A repository is created for your project directory, thereby creating a .git directory which allows you to commit and track older versions of your project.  This is necessary to use git version control features.
+
+How is the staging area different from the working directory and the repository?  What value do you think it offers?
+The staging area shows which files from the working directory will be committed when you git commit.  This is valuable because you can add multiple files to be committed, and reset if you make a mistake without ever affecting the commit log.
+
