@@ -4,3 +4,19 @@ A repository is created for your project directory, thereby creating a .git dire
 How is the staging area different from the working directory and the repository?  What value do you think it offers?
 The staging area shows which files from the working directory will be committed when you git commit.  This is valuable because you can add multiple files to be committed, and reset if you make a mistake without ever affecting the commit log.
 
+How can you use the staging area to make sure you have one commit per logical change?
+You can use the git diff --staged command to check the exact changes you've made since your last commit.
+
+What are some situations when branches would be helpful in keeping your history organized?  How would branches help?
+Major experimental features or versions of your project can be better organized, with a precise save point represented as a new branch.  Also, sharing features with different groups can be done more efficiently with branches, e.g. having branches for development teams, branches for production teams, and branches for showing experimental/future features to the public.
+
+How do the diagrams help you visualize the branch structure?
+You can clearly and quickly see important information in an organized representation, such as the current head, branches, and branch heads.
+
+What is the result of merging two branches together?  Why do we represent it in the diagram the way we do?
+Merging two branches together takes into consideration any changes made from the point of branch creation and combines them back into one branch.  This way, new additions will be brought in and removed items will remain expunged.
+Visualizing the log in diagram form helps us to easily identify what changes are being brought in and at what point.
+
+What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+Automatic merging is great for simple, unambiguous merges.  For anything more complex, though, requiring users to make manual changes is the quickest, easiest, and least error-prone solution.
+
